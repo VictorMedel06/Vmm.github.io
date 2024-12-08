@@ -9,6 +9,19 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
+  <!-- Botón para cambiar al inglés -->
+  <button id="toEnglish" style="
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    padding: 10px 15px;
+    background-color: #28A745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  ">Cambiar a Inglés</button>
+
   <!-- Encabezado con navegación -->
   <header>
     <h1>Web4U</h1>
@@ -25,7 +38,6 @@
 
   <!-- Sección principal -->
   <main>
-    
     <!-- Miniaturas de contenido -->
     <section class="thumbnails">
       <article>
@@ -51,8 +63,17 @@
 
   <!-- Pie de página con opción de cambiar idioma -->
   <footer>
-    <p>© Victor Medel Martin Web4U | <a href="en/index.html" title="Cambiar al inglés">English</a></p>
+    <p>© Victor Medel Martin Web4U | <a href="english/index.html" title="Cambiar al inglés">English</a></p>
   </footer>
+
+  <!-- JavaScript para el cambio de idioma -->
+  <script>
+    const toEnglishButton = document.getElementById('toEnglish');
+    
+    toEnglishButton.addEventListener('click', () => {
+      window.location.href = "english/index.html";
+    });
+  </script>
 
   <!-- Enlace a pdf.js -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.3/html2pdf.bundle.min.js"></script>
