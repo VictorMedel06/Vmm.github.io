@@ -20,12 +20,20 @@ function downloadPageAsPDF() {
     html2pdf().set(options).from(element).save();
 }
 
-// Llamar a la función cuando se hace clic en un botón
+// Crear un botón de descarga y agregarlo dinámicamente
 const downloadButton = document.createElement('button');
 downloadButton.textContent = 'Descargar como PDF';
 downloadButton.style.position = 'fixed';
 downloadButton.style.top = '10px';
 downloadButton.style.right = '10px';
+downloadButton.style.padding = '10px 15px';
+downloadButton.style.backgroundColor = '#007BFF';
+downloadButton.style.color = 'white';
+downloadButton.style.border = 'none';
+downloadButton.style.borderRadius = '5px';
+downloadButton.style.cursor = 'pointer';
+downloadButton.style.zIndex = '1000';
 document.body.appendChild(downloadButton);
 
+// Agregar evento al botón
 downloadButton.addEventListener('click', downloadPageAsPDF);
