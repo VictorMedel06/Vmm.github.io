@@ -48,15 +48,16 @@ languageButton.style.zIndex = '1000';
 document.body.appendChild(languageButton);
 
 // Función para cambiar el idioma de la página
-function switchLanguage() {
-    const currentLanguage = window.location.pathname; // Obtiene la ruta actual
-    if (currentLanguage.includes('/en/')) {
-        // Cambiar a la versión en español
-        window.location.href = window.location.href.replace('/en/', '/');
-    } else {
-        // Cambiar a la versión en inglés
-        window.location.href = window.location.href.replace('/','/en/');
-    }
+function switchToEnglish() {
+  window.location.href = "/english/index english.html"; // Ruta correcta al archivo traducido
 }
 
-languageButton.addEventListener('click', switchLanguage);
+function switchToSpanish() {
+  window.location.href = "/index.html"; // Ruta de la versión en español
+}
+
+languageButton.addEventListener('click', switchToEnglish);
+
+
+
+backToSpanishButton.addEventListener('click', switchToSpanish);
