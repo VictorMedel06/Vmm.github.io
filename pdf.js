@@ -4,23 +4,18 @@
 
 // Función para descargar la página como PDF
 function downloadPageAsPDF() {
-    // Seleccionar el contenido que deseas exportar a PDF
-    const element = document.body; // Puedes especificar otro elemento, como un div específico
-
-    // Opciones de configuración para el PDF
+    const element = document.body; // Seleccionar todo el contenido de la página
     const options = {
-        margin: 1, // Márgenes en cm
-        filename: 'pagina-web.pdf', // Nombre del archivo PDF
-        image: { type: 'jpeg', quality: 0.98 }, // Calidad de las imágenes
-        html2canvas: { scale: 2 }, // Mejora la resolución del PDF
-        jsPDF: { unit: 'cm', format: 'a4', orientation: 'portrait' } // Configuración del documento PDF
+        margin: 1,
+        filename: 'pagina-web.pdf',
+        image: { type: 'jpeg', quality: 0.98 },
+        html2canvas: { scale: 2 },
+        jsPDF: { unit: 'cm', format: 'a4', orientation: 'portrait' }
     };
-
-    // Generar y descargar el PDF
     html2pdf().set(options).from(element).save();
 }
 
-// Crear un botón de descarga y agregarlo dinámicamente
+// Crear un botón de descarga PDF
 const downloadButton = document.createElement('button');
 downloadButton.textContent = 'Descargar como PDF';
 downloadButton.style.position = 'fixed';
@@ -35,5 +30,33 @@ downloadButton.style.cursor = 'pointer';
 downloadButton.style.zIndex = '1000';
 document.body.appendChild(downloadButton);
 
-// Agregar evento al botón
 downloadButton.addEventListener('click', downloadPageAsPDF);
+
+// Crear un botón para cambiar idioma
+const languageButton = document.createElement('button');
+languageButton.textContent = 'Cambiar a Inglés';
+languageButton.style.position = 'fixed';
+languageButton.style.top = '10px';
+languageButton.style.left = '10px';
+languageButton.style.padding = '10px 15px';
+languageButton.style.backgroundColor = '#28A745';
+languageButton.style.color = 'white';
+languageButton.style.border = 'none';
+languageButton.style.borderRadius = '5px';
+languageButton.style.cursor = 'pointer';
+languageButton.style.zIndex = '1000';
+document.body.appendChild(languageButton);
+
+// Función para cambiar el idioma de la página
+function switchLanguage() {
+    const currentLanguage = window.location.pathname; // Obtiene la ruta actual
+    if (currentLanguage.includes('/en/')) {
+        // Cambiar a la versión en español
+        window.location.href = window.location.href.replace('/en/', '/');
+    } else {
+        // Cambiar a la versión en inglés
+        window.location.href = window.location.href.replace('/','/en/');
+    }
+}
+
+languageButton.addEventListener('click', switchLanguage);
