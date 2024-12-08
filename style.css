@@ -1,0 +1,161 @@
+body {
+    font-family: 'Roboto', sans-serif; /* Cambiado a 'Roboto' como fuente principal */
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #007bff; /* Color de fondo del encabezado */
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2.5em; /* Tamaño del título principal */
+}
+
+p {
+    font-size: 1.2em; /* Tamaño del texto */
+}
+
+nav {
+    background-color: #0056b3; /* Color de fondo del menú */
+    padding: 10px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+}
+
+nav a:hover {
+    background-color: #004494;
+    border-radius: 5px;
+}
+
+/* Resaltar página activa */
+nav a.active {
+    font-weight: bold;
+    border-bottom: 2px solid #fff;
+}
+
+main {
+    padding: 20px; /* Espaciado interno del main */
+}
+
+.featured {
+    background-color: #e7f3ff;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.thumbnails {
+    display: flex;
+    justify-content: space-around; /* Espaciado uniforme entre artículos */
+    flex-wrap: wrap; /* Permitir que los artículos se ajusten en varias filas */
+    margin: 20px;
+}
+
+article {
+    background-color: #007bff; /* Color de fondo de los artículos */
+    border: 1px solid #ddd;
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra para un efecto de elevación */
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+    width: 200px; /* Ancho fijo para los artículos */
+    transition: transform 0.2s; /* Transición suave para el efecto hover */
+}
+
+article:hover {
+    transform: scale(1.05); /* Efecto de aumento al pasar el ratón */
+}
+
+img {
+    max-width: 80%; /* Asegura que la imagen no exceda el ancho del artículo */
+    height: auto; /* Mantiene la proporción de la imagen */
+    margin-bottom: 10px; /* Espacio entre la imagen y el título */
+}
+
+h2 {
+    font-size: 1.5em; /* Tamaño del texto del título del artículo */
+    margin: 0; /* Eliminar margen superior */
+}
+
+h3 {
+    font-size: 1.4em; /* Tamaño del texto del título de sección */
+    margin: 10px 0; /* Margen superior e inferior */
+}
+
+a {
+    color: #007bff; /* Color del enlace */
+    text-decoration: none; /* Sin subrayado */
+}
+
+a:hover {
+    text-decoration: underline; /* Subrayado al pasar el ratón */
+}
+
+/* Estilo del pie de página */
+footer {
+    background-color: #0056b3; /* Fondo azul oscuro */
+    color: white;
+    padding: 10px;
+    text-align: center;
+    margin-top: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: grey; /* Color de fondo del pie de página */
+    color: black;
+}
+
+/* Estilos específicos para SVG */
+svg {
+    border: 1px solid #c5b7b7; /* Borde gris para el SVG */
+    margin-top: 10px; /* Margen superior */
+    display: block; /* Asegura que el SVG se centre */
+}
+
+/* Estilos para secciones */
+section {
+    background-color: #ccd0ec; /* Fondo blanco para secciones */
+    border-radius: 5px;
+    padding: 15px;
+    margin: 10px 0;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+
+/* Estilos para los ejemplos prácticos de SVG */
+.svg-example {
+    border: 2px solid #007bff; /* Borde azul para los ejemplos */
+    border-radius: 5px;
+    padding: 15px;
+}
+
+/* Estilos para los recuadros de ejemplos */
+.example-box {
+    border: 2px solid #ff0202; /* Borde azul */
+    border-radius: 5px; /* Bordes redondeados */
+    padding: 15px; /* Espaciado interno */
+    margin: 10px 0; /* Margen superior e inferior */
+    background-color: #84bcf3; /* Fondo claro para los ejemplos */
+    box-shadow: 0 1px 3px rgba(209, 51, 51, 0.1); /* Sombra sutil */
+}

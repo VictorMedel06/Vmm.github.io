@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Web4U: Aprende HTML, SVG y CSS con ejemplos y explicaciones claras.">
+  <title>Web4U - Aprende HTML, SVG y CSS</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <!-- Enlace a la biblioteca html2pdf.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.3/html2pdf.bundle.min.js"></script>
+  <!-- Enlace al archivo pdf.js -->
+  <script src="pdf.js" defer></script>
+</head>
+<body>
+  <!-- Encabezado con navegación -->
+  <header>
+    <h1>Web4U</h1>
+    <p>Aprende HTML, SVG y CSS con ejemplos y recursos.</p>
+    <nav>
+      <ul>
+        <li><a href="index.html" class="active">Inicio</a></li>
+        <li><a href="HTML.html">HTML</a></li>
+        <li><a href="SVG.html">SVG</a></li>
+        <li><a href="CSS.html">CSS</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Sección principal -->
+  <main>
+    <section class="featured">
+      <h2>Contenido Destacado</h2>
+      <p>Explora nuestros recursos más populares.</p>
+    </section>
+
+    <!-- Miniaturas de contenido -->
+    <section class="thumbnails">
+      <article>
+        <a href="HTML.html" title="Ir a la página de HTML">
+          <img src="imagenes/hmtl logo.png" alt="Logo de HTML">
+          <h2>HTML</h2>
+        </a>
+      </article>
+      <article>
+        <a href="SVG.html" title="Ir a la página de SVG">
+          <img src="imagenes/svglogo.png" alt="Logo de SVG">
+          <h2>SVG</h2>
+        </a>
+      </article>
+      <article>
+        <a href="CSS.html" title="Ir a la página de CSS">
+          <img src="imagenes/csslogo2.png" alt="Logo de CSS">
+          <h2>CSS</h2>
+        </a>
+      </article>
+    </section>
+  </main>
+
+  <!-- Pie de página con opción de cambiar idioma -->
+  <footer>
+    <p>© Victor Medel Martin Web4U | <a href="en/index.html" title="Cambiar al inglés">English</a></p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Web4U: Learn HTML, SVG, and CSS with examples and clear explanations.">
+  <title>Web4U - Learn HTML, SVG, and CSS</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Web4U</h1>
+    <p>Learn HTML, SVG, and CSS with examples and resources.</p>
+    <nav>
+      <ul>
+        <li><a href="index.html" title="Go back to the home page">Home</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2 id="content">SVG Content</h2>
+    <p>- SVG (Scalable Vector Graphics) is an image format based on XML used to create vector graphics on the web. SVG is scalable, which means it can be resized without losing quality, and it can be manipulated with CSS and JavaScript.</p>
+
+    <section class="svg-example">
+      <h3 id="circle">The &lt;circle&gt; Tag</h3>
+      <p>Create a circle:</p>
+      <pre><code>&lt;circle cx="50" cy="50" r="40" fill="blue" /&gt;</code></pre>
+      <p>Result:</p>
+      <svg width="100" height="100">
+        <circle cx="50" cy="50" r="40" fill="blue" />
+      </svg>
+      <a href="https://www.w3.org/TR/SVG2/" title="Learn more about SVG">Read more on W3C</a>
+    </section>
+
+    <section class="svg-example">
+      <h3 id="rectangle">The &lt;rect&gt; Tag</h3>
+      <p>Create a rectangle:</p>
+      <pre><code>&lt;rect x="10" y="10" width="80" height="40" fill="green" /&gt;</code></pre>
+      <p>Result:</p>
+      <svg width="100" height="60">
+        <rect x="10" y="10" width="80" height="40" fill="green" />
+      </svg>
+    </section>
+
+    <section class="svg-example">
+      <h3 id="line">The &lt;line&gt; Tag</h3>
+      <p>Draw a line:</p>
+      <pre><code>&lt;line x1="10" y1="10" x2="90" y2="50" stroke="red" stroke-width="2" /&gt;</code></pre>
+      <p>Result:</p>
+      <svg width="100" height="60">
+        <line x1="10" y1="10" x2="90" y2="50" stroke="red" stroke-width="2" />
+      </svg>
+    </section>
+
+    <section class="svg-example">
+      <h3 id="ellipse">The &lt;ellipse&gt; Tag</h3>
+      <p>Create an ellipse:</p>
+      <pre><code>&lt;ellipse cx="50" cy="30" rx="40" ry="20" fill="purple" /&gt;</code></pre>
+      <p>Result:</p>
+      <svg width="100" height="60">
+        <ellipse cx="50" cy="30" rx="40" ry="20" fill="purple" />
+      </svg>
+    </section>
+
+    <section class="svg-example">
+      <h3 id="polygon">The  &lt;polygon&gt; Tag</h3>
+      <p>Create a polygon:</p>
+      <pre><code>&lt;polygon points="50,10 90,90 10,90" fill="orange" /&gt;</code></pre>
+      <p>Result:</p>
+      <svg width="100" height="100">
+        <polygon points="50,10 90,90 10,90" fill="orange" />
+      </svg>
+    </section>
+
+    <a href="pdfs/svg.pdf" title="Download the SVG PDF version">Download PDF</a>
+  </main>
+
+  <footer>
+    <p>© 2024 Web4U | <a href="en/index.html" title="Switch to Spanish">Español</a></p>
+  </footer>
+</body>
+</html>
